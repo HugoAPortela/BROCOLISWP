@@ -1,0 +1,200 @@
+/*!
+Theme Name: brocoliswp
+Author: Adam Silva
+Author URI: http://estudarti.com.br
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: brocoliswp
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    color: #222;
+}
+p{
+    font-weight: 300;
+}
+.big-title{
+    font-size: 2.125rem;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+.big-title.center{
+    text-align: center;
+}
+.big-title.spaced{
+    margin-top: 164px;
+}
+
+/* HEADER */
+.site-header{
+    width: 100%;
+    height: 120px;
+    background-color: #11be4e;
+}
+#header-content, #portfolio, .site-footer{
+    max-width: 980px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.site-header .site-title a{
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #111;
+}
+.site-header .site-title{
+    transition: transform .5s ease-out;
+}
+.site-header .site-title:hover {
+    transform: rotate(25deg);
+}
+#primary-menu{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#primary-menu li{
+    display: inline;
+}
+#primary-menu li a {
+    font-size: 0.875rem;
+    color: #111;
+    transition: color .5s;
+}
+#primary-menu li a:hover {
+    color: #FFF;
+}
+#primary-menu li:before{
+    display: block;
+    content: '/';
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline;
+}
+.site-header .social{
+    margin-top: 20px;
+    margin-left: 8px;
+}
+.site-header .social a{
+    font-size: .875rem;
+    margin-left: 8px;
+    color: #111;
+}
+.site-header .social a i{
+    transition: transform .5s ease-in;
+}
+.site-header .social a:hover i{
+    transform: scale(1.5);
+}
+
+
+/* CONTENT */
+.site-content{
+    width: 100%;
+}
+.site-content .img-responsive{
+    width: 100%;
+    height: auto;
+}
+#site-info, .content-area{
+    max-width: 630px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+#site-info .big-title{
+    margin-top: 54px;
+}
+#site-info strong{
+    display: block;
+    margin-bottom: 32px;
+}
+#site-info p{
+    margin-bottom: 42px;
+}
+#portfolio{
+    justify-content: space-between;
+}
+#portfolio h2{
+    flex-basis: 100%;
+}
+#portfolio .box-work{
+    flex-basis: 31%;
+    margin-bottom: 40px;
+}
+#portfolio .box-work img{
+    width: 100%;
+    height: auto;
+    transition: transform .5s;
+}
+#portfolio .box-work img:hover {
+    transform: scale(1.1);
+}
+#portfolio .meta-work{
+    text-align: center;
+    margin-top: 20px;
+}
+.content-area .read-more{
+    display: block;
+    float: right;
+    width: 128px;
+    margin-top: 40px;
+    margin-bottom: 78px;
+    font-size: .75rem;
+    background-color: #11be4e;
+    padding: 12px 18px;
+    transition: background-color .5s;
+}
+.content-area .read-more:hover{
+    background-color: yellow;
+}
+.content-area .read-more i{
+    font-size: .75rem;
+}
+.content-area img{
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease-out;
+}
+.content-area img:hover{
+    transform: skew(15deg);
+}
+.content-area .entry-title{
+    margin-top: 40px;
+    margin-bottom: 14px;
+    font-weight: normal;
+}
+.content-area .entry-title a{
+    font-size: 1.5rem;
+}
+.content-area .entry-meta{
+    margin-bottom: 14px;
+}
+.entry-meta .posted-on,.entry-meta a, .entry-meta time{
+    color: #CCC;
+}
+/* FOOTER */
+
+.site-footer{
+    justify-content: flex-end;
+}
+.site-footer .site-info, .site-footer .social a{
+    font-size: 1rem;
+    color: #CCC;
+}
+.site-footer .social{
+    margin-left: 16px;
+}
+.site-footer .social a{
+    margin-right: 12px;
+}
+.site-footer .social a i {
+    color: #CCC;
+}
